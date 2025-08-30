@@ -1,13 +1,15 @@
+# hello-world.yml
+
 name: Hello World
 
-on: 
-    push:
-        branches:
-            - main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-    hello-job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Echo Test
-              run: echo "Hello, world!"
+  hello-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Test
+        run: echo "Hello, world!"
